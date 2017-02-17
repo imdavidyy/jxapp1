@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: jxapp1
+  host: jxapp1
+  disk_quota: 1024M
+  services:
+  - jxapp1-cloudantNoSQLDB
+  - jxapp1-iotf-service
+  - availability-monitoring-auto
